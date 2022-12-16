@@ -31,20 +31,21 @@ else:
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////    
 
-car game (doesn't work)
+car game 
 
 
 command = ""
-while command.lower != "quit":
+while command.lower() != "quit":
     command = input("> ")
-    if command.lower == "start":
+    if command.lower() == "start":
         print("car started...")
-    elif command.lower == "stop":
+    elif command.lower() == "stop":
         print("car stopped...")
-    elif command.lower == "help":
-        print("""start - start the car
-        stop - stop the car
-        quit - quit the car""")
+    elif command.lower() == "help":
+        print("""
+start - start the car
+stop - stop the car
+quit - quit the car""")
     else:
         print("I don't understand that...")
     
@@ -54,7 +55,7 @@ while command.lower != "quit":
     
 command = ""
 while command != "quit":
-    command = input("> ").lower
+    command = input("> ").lower()
     if command == "start":
         print("car started...")
     elif command == "stop":
@@ -86,6 +87,26 @@ for x in range(4):
         print(x, y)
         
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+numbers = [5, 2, 5, 2, 2]
+for x_count in numbers:
+    print('x' * x_count)
+    
+    numbers = [5, 2, 5, 2, 2]
+for x_count in numbers:
+    output = ''
+    for count in range(x_count):
+        output += 'x'
+    print(output)
+    
+xxxxx
+xx
+xxxxx
+xx
+xx
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 
 
