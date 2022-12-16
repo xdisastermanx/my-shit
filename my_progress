@@ -1,0 +1,73 @@
+
+weight converter (16.12)
+
+weight = int(input('Weight: '))
+type = input('(L)bs or (K)g: ')
+
+if type.upper() == "L":
+    converted = weight * 0.45
+    print(f"ur are {converted} kilos")
+elif type.upper() == "K":
+    converted = weight * 2.2
+    print(f"ur are {converted} pounds")
+else:
+    print('invalid data')
+    
+    
+    
+guess game (16.12)
+
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input('guess '))
+    guess_count += 1
+    if guess == secret_number:
+        print('u won')
+        break
+else:
+    print('u failed')
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////    
+
+
+car game (doesn't work)
+
+
+command = ""
+while command.lower != "quit":
+    command = input("> ")
+    if command.lower == "start":
+        print("car started...")
+    elif command.lower == "stop":
+        print("car stopped...")
+    elif command.lower == "help":
+        print("""start - start the car
+        stop - stop the car
+        quit - quit the car""")
+    else:
+        print("I don't understand that...")
+    
+    
+    with input().lower
+    
+    command = ""
+while command != "quit":
+    command = input("> ").lower
+    if command == "start":
+        print("car started...")
+    elif command == "stop":
+        print("car stopped...")
+    elif command == "help":
+        print("""start - start the car
+        stop - stop the car
+        quit - quit the car""")
+    else:
+        print("I don't understand that...")
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    
+    
