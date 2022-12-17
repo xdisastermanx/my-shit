@@ -216,7 +216,7 @@ except ValueError:
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Classes and Inheritence
+Classes, Constructors and Inheritence
 
 class Mammal:
     def walk(self):
@@ -233,6 +233,24 @@ class Cat(Mammal):
 
 dog = Dog()
 dog.walk()
+
+
+
+import random
+
+class Dice:
+    def __init__(self, dice):
+        self.dice = dice
+
+    def roll(self):
+        first = random.randint(1, 6)
+        second = random.randint(1, 6)
+        return first, second
+
+
+dice = Dice("red dice")
+
+print(dice.roll())
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -253,3 +271,12 @@ print(maximum)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+working with paths/other files
+
+from pathlib import Path
+
+path = Path()
+for file in path.glob('*.py'):
+    print(file)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
