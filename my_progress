@@ -236,3 +236,20 @@ dog.walk()
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+utils
+def find_max(numbers):
+    maximum = numbers[0]
+    for number in numbers:
+        if number > maximum:
+            maximum = number
+    return maximum
+
+import utils
+
+numbers = [2, 5, 9, 23, 4, 55, 45]
+
+maximum = utils.find_max(numbers)
+print(maximum)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
