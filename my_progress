@@ -280,3 +280,210 @@ for file in path.glob('*.py'):
     print(file)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+alien_0 = {'points': 5}
+alien_0["color"] = input("choose the color ")
+
+alien_0["x_position"] = 10
+alien_0["y_position"] = 5
+print(alien_0)
+
+new_points = alien_0['points']
+
+print(f"you gained {alien_0['points']} points, well done")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+alien_0 = {'points': 5, 'color': 'red', 'x_position': 10, 'y_position': 5, 'speed': 'slow'}
+
+original_position = alien_0['x_position']
+
+if alien_0['speed'] == 'slow':
+    x_increment = 1
+elif alien_0['speed'] == 'medium':
+    x_increment = 2
+else:
+    x_increment = 3
+
+new_position = original_position + x_increment
+print(new_position)
+
+
+
+print(f"you gained {alien_0['points']} points, well done")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+favorite_languages = {
+ 'jen': 'python',
+ 'sarah': 'c',
+ 'edward': 'ruby',
+ 'phil': 'python',
+ }
+
+
+print(f"Sarahs favourite language is {favorite_languages['sarah']}, thats great")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+aliens = []
+# Make 30 green aliens.
+for alien_number in range(30):
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+
+# Show the first 5 aliens:
+for alien in aliens[:5]:
+    print(alien)
+print("...")
+# Show how many aliens have been created.
+print("Total number of aliens: " + str(len(aliens)))
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+aliens = []
+# Make 30 green aliens.
+for alien_number in range(15):
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+
+for alien in aliens[:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['points'] = 10
+
+
+# Show the first 5 aliens:
+for alien in aliens[:5]:
+    print(alien)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+favorite_languages = {
+ 'jen': ['python', 'ruby'],
+ 'sarah': ['c'],
+ 'edward': ['ruby', 'go'],
+ 'phil': ['python', 'haskell'],
+ }
+
+for name, languages in favorite_languages.items():
+    print("\n" + name.title() + "'s favorite languages are:")
+    if len(languages) > 1:
+        print("Good job")
+    for language in languages:
+            print("\t" + language.title())
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+favourite_places = {'dad': ['florence', 'moscow', 'sicily'],
+                    'mom': ['france', 'spain', 'america'],
+                    'phil': ['portugal', 'japan', 'korea']}
+
+for names, places in favourite_places.items():
+    print(f"\n{names}'s favourite places are:")
+    for place in places:
+        print(f" {place}")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+?????
+
+white_griffin = {'color': 'black', 'breed': 'griffin'}
+bella_chihahua = {'color': 'white', 'breed': 'chihahua'}
+
+pets = [white_griffin, bella_chihahua]
+
+for pet in pets:
+    print(f"{}bla bla")
+    for pet_character, value in pet.items():
+        print(f"{pet_character} is {value}")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+cities = {'Florence': {'population': '1 ', 'year': '1478'},
+          'Moscow': {'population': '8 ', 'year': '1347'},
+          'Berlin': {'population': '5 ', 'year': '1746'}}
+
+for city, facts in cities.items():
+    print(f"{city} is big")
+    print(f"It was found in {facts['year']} and its population is {facts['population']} millions")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+topping_name = ""
+while topping_name != "quit":
+    topping_name = input(f"enter any pizza topping u like: ")
+    print(f"{topping_name} topping is added to ur pizza")
+    if topping_name == "quit":
+        print(f"topping time ended")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+unconfirmed_users = ['dan', 'disaster', 'clown']
+
+confirmed_users = []
+
+while unconfirmed_users:
+    current_user = unconfirmed_users.pop()
+    print(f"nvjdfi {current_user.title()}")
+    confirmed_users.append(current_user)
+for confirmed_user in confirmed_users:
+    print(confirmed_user)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+responses = {}
+polling_active = True
+while polling_active:
+    name = input("\nWhat is your name? ")
+    response = input("Which mountain would you like to climb someday? ")
+    responses[name] = response
+    repeat = input("Would you like to let another person respond? (yes/ no) ")
+    if repeat == 'no':
+        polling_active = False
+        print("\n--- Poll Results ---")
+        for name, response in responses.items():
+            print(name + " would like to climb " + response + ".")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+LOOPING
+sandwich_orders = ['panino with chicken', 'panino with ham', 'sandwich with fish']
+
+finished_sandwiches = []
+sandwich_cooking = True
+while sandwich_cooking:
+    sandwich_progress = sandwich_orders.pop()
+    finished_sandwiches.append(sandwich_progress)
+    print(f"{sandwich_progress} has been cooked")
+    if len(sandwich_orders) == 0:
+        sandwich_cooking = False
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+def greet_user(username):
+    print(f"hello {username}, how are yuo?")
+
+greet_user(input(f"enter ur name "))
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
