@@ -481,20 +481,22 @@ greet_user()
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-def make_album(album_name, song_name1, song_name2=''):
-    if song_name2:
-        album = {'album': album_name, 'name of song': [song_name1, song_name2]}
+def make_album(artist_name, album_name, number_of_tracks=''):
+    new_album = {'Artist': artist_name, 'Album': album_name}
+    if number_of_tracks:
+        new_album['Number of track'] = number_of_tracks
+        return new_album
     else:
-        album = {'album': album_name, 'name of song': song_name1}
-    return album
+        return new_album
 
 
-new_album = make_album('D and D', 'powerless', "clowns")
-print(new_album)
+
+create_album = make_album('Kesha', 'Ya nasralk', 6)
+print(create_album)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-do an exersise 8-8
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
