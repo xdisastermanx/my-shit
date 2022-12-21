@@ -496,7 +496,22 @@ print(create_album)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+def make_album(artist_name, album_name, number_of_tracks=''):
+    new_album = {'Artist': artist_name, 'Album': album_name}
+    if number_of_tracks:
+        new_album['Number of track'] = number_of_tracks
+        return new_album
 
+
+artist_input = input(f"enter ")
+album_input = input(f"enter ")
+track_number = input(f"enter ")
+if track_number == "":
+    print(f"u didnt enter number of tracks in album")
+    print(make_album(artist_input, album_input))
+else:
+    create_album = make_album(artist_input, album_input, track_number)
+    print(create_album)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
